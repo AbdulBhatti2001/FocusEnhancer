@@ -29,7 +29,7 @@ try:
     currentTime = time.time()
     noActivity = currentTime - last_activity
 
-    if noActivity >= 1:
+    if noActivity >= 10:
       is_rattling = True
       controller.rumble(0.5, 0.5, 200)
     time.sleep(0.1)
