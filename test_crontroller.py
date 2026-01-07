@@ -20,7 +20,8 @@ while True:
         print("Connected successfullay")
         
         try:
-            controller.rumble(3.0, 3.0, 3000) 
+            controller.rumble(0.1, 1,0)
+            time.sleep(2) 
             print("buzzed")
         except:
             print("connected but (no energy?)")
